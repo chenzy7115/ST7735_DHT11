@@ -1,0 +1,9 @@
+## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: '>=4.1.0'
+  espressif/esp_lvgl_port: ^2.6.0
+  teriyakigod/esp_lcd_st7735: ^0.0.1
+
+
