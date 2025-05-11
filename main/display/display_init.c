@@ -60,7 +60,7 @@ esp_err_t app_lcd_init(void)
     // 设置显示出来的图像的 x 和 y 方向的偏移量
     // 该间距指的是液晶显示屏的左侧 / 顶部边缘与实际显示内容的第一行 / 列之间的距离（以像素为单位）。
     int x_gap = 2; // 向右偏移 2 个像素
-    int y_gap = 1; // 向下偏移 1 个像素
+    int y_gap = 3; // 向下偏移 1 个像素
     ret = esp_lcd_panel_set_gap(lcd_panel, x_gap, y_gap);
     if (ret != ESP_OK)
     {
