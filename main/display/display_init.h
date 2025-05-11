@@ -35,20 +35,16 @@
 #define EXAMPLE_LCD_GPIO_CS (GPIO_NUM_22)
 #define EXAMPLE_LCD_GPIO_BL (GPIO_NUM_5)
 
-static const char *TAG = "LCD";
+extern const char *TAG;
 
 /* LCD IO and panel */
-static esp_lcd_panel_io_handle_t lcd_io = NULL;
-static esp_lcd_panel_handle_t lcd_panel = NULL;
+extern esp_lcd_panel_io_handle_t lcd_io;
+extern esp_lcd_panel_handle_t lcd_panel;
 
 /* LVGL display and touch */
-static lv_display_t *lvgl_disp = NULL;
+extern lv_display_t *lvgl_disp;
 
 extern esp_err_t app_lcd_init(void);
 extern esp_err_t app_lvgl_init(void);
-
-
-
-
 
 #endif

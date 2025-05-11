@@ -1,7 +1,14 @@
 #include <stdio.h>
 #include "display_init.h"
 
+const char *TAG = "LCD";
 
+/* LCD IO and panel */
+esp_lcd_panel_io_handle_t lcd_io = NULL;
+esp_lcd_panel_handle_t lcd_panel = NULL;
+
+/* LVGL display and touch */
+lv_display_t *lvgl_disp = NULL;
 
 esp_err_t app_lcd_init(void)
 {
@@ -119,4 +126,3 @@ esp_err_t app_lvgl_init(void)
 
     return ESP_OK;
 }
-

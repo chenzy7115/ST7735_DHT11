@@ -12,7 +12,10 @@
   },
   "files.associations": {
     "tt21100.hpp": "c",
-    "base_peripheral.hpp": "c"
+    "base_peripheral.hpp": "c",
+    "task.h": "c",
+    "esp_random.h": "c",
+    "esp_log.h": "c"
   },
   "idf.flashType": "UART"
 }
