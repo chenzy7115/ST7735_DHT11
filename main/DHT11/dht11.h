@@ -4,7 +4,7 @@
 
 
 #define DHT11_GPIO 25 // DHT11引脚定义
-const static char *TAG = "DHT11";
+
 
 /** DHT11初始化
  * @param dht11_pin GPIO引脚
