@@ -15,3 +15,6 @@ task一定要有delay阻塞避免看门狗启动
 display folder 中的包括显示初始化和UI
 #
 DH11 folde 中包括DH11驱动和数据采集
+
+# ESP-IDF的espressif_esp_lvgl_port接口已经将LVGL移植所需要重要部分都已经封装
+对于使用者来说只需要考虑显示屏的驱动既可，不需要过多的考虑其他问题
