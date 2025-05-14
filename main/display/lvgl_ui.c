@@ -26,7 +26,7 @@ void app_main_display_init(void)
     //屏幕设置样式
     /*Set a background color */
     lv_style_init(&style);
-    lv_style_set_bg_color(&style, lv_palette_main(LV_PALETTE_BLUE_GREY));
+    lv_style_set_bg_color(&style, lv_palette_main(LV_PALETTE_DEEP_ORANGE));
     lv_obj_add_style(scr, &style, 0);
 
     vTaskDelay(1);
@@ -62,8 +62,8 @@ void app_main_display_init(void)
     // 定位标签位置
     // lv_obj_align(label, LV_ALIGN_TOP_MID, 0, 5);
     lv_obj_align(label_tem, LV_ALIGN_CENTER, 0, -2);
-    lv_obj_align(lable_tem_static, LV_ALIGN_TOP_RIGHT, -5,10);
-    lv_obj_align(label_hum, LV_ALIGN_BOTTOM_MID, 0, -5);
+    lv_obj_align(lable_tem_static, LV_ALIGN_TOP_RIGHT, -5,20);
+    lv_obj_align(label_hum, LV_ALIGN_BOTTOM_MID, 0, -10);
     vTaskDelay(1);
 
     // 设置初始文本
