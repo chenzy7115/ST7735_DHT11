@@ -6,9 +6,9 @@
 #
 UI将显示部分分为init和flush两个部分
 #
-UI initiate 的部分有delay阻塞，避免看门狗启动
-#
 task一定要有delay阻塞避免看门狗启动
+
+# 通过消息队列queue，来传递DHT11采集来的数据，避免使用互斥锁产生的竞争延迟
 
 # 目录结构
 
